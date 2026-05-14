@@ -1,0 +1,23 @@
+{
+  "name": "Batu Hiu Conservation",
+  "short_name": "Batuhiu",
+  "description": "Konservasi Penyu Pantai Batu Hiu Pangandaran - Yayasan Raksa Bintana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A4A5C",
+  "theme_color": "#0A4A5C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
