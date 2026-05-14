@@ -1,0 +1,8 @@
+# This file is generated dynamically by app/robots.ts
+# Static fallback for crawlers that don't support dynamic robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://batuhiu-conservation.vercel.app/sitemap.xml
