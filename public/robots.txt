@@ -4,5 +4,17 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Crawl-delay: 0
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
 
 Sitemap: https://batuhiu-conservation.vercel.app/sitemap.xml
+Host: https://batuhiu-conservation.vercel.app
