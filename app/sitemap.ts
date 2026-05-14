@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/informasi-wisata/lokasi-tata-cara`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/informasi-wisata/panduan`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/donasi`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/reservasi`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/kontak`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
   ];
 }
