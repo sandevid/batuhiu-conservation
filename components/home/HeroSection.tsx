@@ -13,9 +13,9 @@ import { staggerContainer, fadeUpVariants, EASE_OUT_CUBIC } from "@/lib/animatio
 
 const TURTLE_IMAGES = [
   {
-    src: "/assets/images/penyu-hijau.webp",
-    alt: "Penyu Hijau di Pantai Batu Hiu",
-    label: "Penyu Hijau",
+    src: "/assets/images/penyu-lekang.webp",
+    alt: "Penyu Lekang di Pantai Batu Hiu",
+    label: "Penyu Lekang",
   },
   {
     src: "/assets/images/penyu-sisik.webp",
@@ -23,14 +23,9 @@ const TURTLE_IMAGES = [
     label: "Penyu Sisik",
   },
   {
-    src: "/assets/images/penyu-tempayan.webp",
-    alt: "Penyu Tempayan di Pantai Batu Hiu",
-    label: "Penyu Tempayan",
-  },
-  {
-    src: "/assets/images/penyu-pipih.webp",
-    alt: "Penyu Pipih di Pantai Batu Hiu",
-    label: "Penyu Pipih",
+    src: "/assets/images/penyu-hijau.webp",
+    alt: "Penyu Hijau di Pantai Batu Hiu",
+    label: "Penyu Hijau",
   },
 ];
 
@@ -54,7 +49,7 @@ export function HeroSection() {
     
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % TURTLE_IMAGES.length);
-    }, 5000); // Change every 5 seconds
+    }, 3000); // Change every 2 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
@@ -246,7 +241,7 @@ export function HeroSection() {
       >
         <motion.div variants={fadeUpVariants} className="inline-flex">
           <Badge variant="seafoam" icon={<Sparkles className="h-3.5 w-3.5" />}>
-            Yayasan Raksa Bintana — Est. 2024
+            Yayasan Raksa Bintana — Est. 2010
           </Badge>
         </motion.div>
 

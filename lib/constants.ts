@@ -8,9 +8,9 @@ export const SITE = {
   foundation: "Yayasan Raksa Bintana",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://batuhiu-conservation.vercel.app",
   locale: "id_ID",
-  foundingYear: 2024,
+  foundingYear: 2010,
   description:
-    "Yayasan Raksa Bintana mengabdikan diri untuk konservasi penyu di Pantai Batu Hiu, Pangandaran. Bergabunglah dalam program edukasi, pelepasan tukik, dan wisata konservasi.",
+    "Yayasan Raksa Bintana mengabdikan diri untuk konservasi penyu di Pantai Batu Hiu, Pangandaran sejak 1983. Fokus pada konservasi tiga spesies penyu: Lekang, Sisik, dan Hijau. Bergabunglah dalam program edukasi, pelepasan tukik, dan wisata konservasi.",
   tagline: "Jaga Penyu, Jaga Lautan Kita",
 } as const;
 
@@ -25,7 +25,7 @@ export const CONTACT = {
     region: "Jawa Barat",
     country: "ID",
   },
-  operationalHours: "08.00 – 17.00 WIB",
+  operationalHours: "07.00 – 18.00 WIB",
   operationalDays: "Setiap Hari",
 } as const;
 
@@ -74,6 +74,18 @@ export const NAV_LINKS = [
 
 export const TURTLE_SPECIES = [
   {
+    id: "lekang",
+    name: "Penyu Lekang",
+    scientific: "Lepidochelys olivacea",
+    status: "Rentan (VU)",
+    statusCode: "VU",
+    statusLabel: "Vulnerable",
+    action: "Pemantauan sarang dan perlindungan habitat peneluran.",
+    importance:
+      "Spesies yang sering ditemukan di perairan Indonesia, indikator kesehatan ekosistem pesisir.",
+    image: "/assets/images/penyu-lekang.webp",
+  },
+  {
     id: "sisik",
     name: "Penyu Sisik",
     scientific: "Eretmochelys imbricata",
@@ -95,30 +107,6 @@ export const TURTLE_SPECIES = [
     action: "Pemantauan sarang, perlindungan induk saat bertelur.",
     importance: "Menjaga keseimbangan ekosistem padang lamun.",
     image: "/assets/images/penyu-hijau.webp",
-  },
-  {
-    id: "tempayan",
-    name: "Penyu Tempayan",
-    scientific: "Caretta caretta",
-    status: "Rentan (VU)",
-    statusCode: "VU",
-    statusLabel: "Vulnerable",
-    action: "Monitoring jalur migrasi dan pantai bertelur.",
-    importance:
-      "Predator moluska pesisir, menjaga rantai makanan tetap seimbang.",
-    image: "/assets/images/penyu-tempayan.webp",
-  },
-  {
-    id: "pipih",
-    name: "Penyu Pipih",
-    scientific: "Natator depressus",
-    status: "Data Kurang (DD)",
-    statusCode: "DD",
-    statusLabel: "Data Deficient",
-    action: "Pendataan awal populasi dan titik peneluran.",
-    importance:
-      "Spesies endemik perairan selatan, indikator ekosistem sehat.",
-    image: "/assets/images/penyu-pipih.webp",
   },
 ] as const;
 
@@ -146,14 +134,14 @@ export const STATISTICS = [
     value: 4200,
     suffix: "+",
     label: "Tukik Dilepas",
-    sub: "Sejak 2024",
+    sub: "Sejak 2010",
     icon: "Egg",
   },
   {
     value: 3,
     suffix: " Spesies",
     label: "Penyu Terpantau",
-    sub: "Sisik, Hijau, Tempayan",
+    sub: "Lekang, Sisik, Hijau",
     icon: "Waves",
   },
   {

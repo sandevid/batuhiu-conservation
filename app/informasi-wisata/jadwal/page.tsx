@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata: Metadata = buildMetadata({
   title: "Jadwal & Kalender Konservasi — Batu Hiu Conservation",
   description:
-    "Jadwal musim penyu bertelur, musim kawin, dan kalender pelepasan tukik di Pantai Batu Hiu Pangandaran. Jam operasional 08.00 - 17.00 WIB setiap hari.",
+    "Jadwal musim penyu bertelur, musim kawin, dan kalender pelepasan tukik di Pantai Batu Hiu Pangandaran. Jam operasional 07.00 - 18.00 WIB setiap hari.",
   keywords: [
     "jadwal konservasi penyu pangandaran",
     "musim bertelur penyu",

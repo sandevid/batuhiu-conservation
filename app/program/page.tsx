@@ -125,7 +125,7 @@ export default function ProgramPage() {
             eyebrow="Spesies"
             title={
               <>
-                Empat penyu yang{" "}
+                Tiga penyu yang{" "}
                 <span className="italic">singgah di sini</span>.
               </>
             }

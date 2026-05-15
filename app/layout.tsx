@@ -41,10 +41,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    template: `%s | ${SITE.name} — ${SITE.foundation}`,
-    default: `${SITE.name} — Konservasi Penyu Pantai Batu Hiu Pangandaran`,
+    template: `%s — ${SITE.foundation}`,
+    default: `${SITE.foundation} — Konservasi Penyu Pantai Batu Hiu Pangandaran`,
   },
   description: SITE.description,
+  applicationName: SITE.name,
   keywords: [
     "konservasi penyu",
     "pantai batu hiu",
@@ -54,30 +55,37 @@ export const metadata: Metadata = {
     "wisata konservasi",
     "penyu hijau",
     "penyu sisik",
+    "penyu lekang",
+    "konservasi laut indonesia",
+    "pelepasan tukik pangandaran",
   ],
   authors: [{ name: SITE.foundation }],
   creator: SITE.foundation,
   publisher: SITE.foundation,
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     type: "website",
     locale: SITE.locale,
     url: SITE.url,
-    siteName: SITE.name,
-    title: `${SITE.name} — Konservasi Penyu Pantai Batu Hiu Pangandaran`,
+    siteName: SITE.foundation,
+    title: `${SITE.foundation} — Konservasi Penyu Pantai Batu Hiu Pangandaran`,
     description: SITE.description,
     images: [
       {
         url: "/og/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: `${SITE.name} — Konservasi penyu Pantai Batu Hiu`,
+        alt: `${SITE.foundation} — Konservasi penyu Pantai Batu Hiu`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: `@${CONTACT.instagram}`,
-    title: SITE.name,
+    creator: `@${CONTACT.instagram}`,
+    title: `${SITE.foundation} — Konservasi Penyu Pantai Batu Hiu`,
     description: SITE.description,
     images: ["/og/og-default.jpg"],
   },
@@ -92,6 +100,16 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
 };
 
 const organizationSchema = {

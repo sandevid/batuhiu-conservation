@@ -10,12 +10,13 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = buildMetadata({
   title: "Tentang Kami — Yayasan Raksa Bintana",
   description:
-    "Yayasan Raksa Bintana didirikan 2024 dengan komitmen penuh terhadap kelestarian ekosistem laut Indonesia. Kenali misi, visi, dan perjalanan kami dalam konservasi penyu.",
+    "Yayasan Raksa Bintana didirikan 2010 sebagai transformasi dari KPBL (Konservasi Penyu Batu Hiu Lestari) yang telah aktif sejak 1983. Kenali misi, visi, dan perjalanan kami dalam konservasi penyu.",
   keywords: [
     "yayasan raksa bintana",
     "profil konservasi penyu",
     "tentang batu hiu conservation",
     "sejarah konservasi penyu pangandaran",
+    "KPBL",
   ],
   path: "/tentang-kami",
   ogImage: "/og/og-about.jpg",
@@ -30,9 +31,9 @@ const aboutSchema = {
     "@type": "NGO",
     name: SITE.foundation,
     alternateName: SITE.name,
-    foundingDate: `${SITE.foundingYear}`,
+    foundingDate: "2010",
     description:
-      "Yayasan konservasi penyu Pantai Batu Hiu, Pangandaran yang mengintegrasikan perlindungan fauna dengan pemberdayaan masyarakat lokal.",
+      "Yayasan konservasi penyu Pantai Batu Hiu, Pangandaran yang dimulai sejak 1983 dan bertransformasi menjadi Yayasan Raksa Bintana pada 2010. Fokus pada konservasi tiga spesies penyu: Lekang, Sisik, dan Hijau.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Pangandaran",
@@ -78,29 +79,29 @@ const PILLARS = [
 
 const TIMELINE = [
   {
-    year: "2024",
-    title: "Pendirian Yayasan Raksa Bintana",
-    body: "Lahir dari keprihatinan atas berkurangnya populasi penyu di pesisir Pangandaran.",
+    year: "1983",
+    title: "Awal Konservasi Penyu Batu Hiu",
+    body: "Kegiatan konservasi penyu dimulai di pesisir Pantai Batu Hiu oleh komunitas lokal yang peduli terhadap kelestarian penyu.",
   },
   {
-    year: "2024",
-    title: "Program Edukasi Pertama",
-    body: "Kerjasama dengan sekolah-sekolah lokal untuk edukasi konservasi penyu.",
+    year: "2006",
+    title: "Relokasi Pasca Tsunami",
+    body: "Setelah tsunami 2006, bangunan konservasi dipindahkan ke lokasi yang lebih aman di area Raksa Bintana saat ini.",
   },
   {
-    year: "2024",
-    title: "Pelepasan Tukik Perdana",
-    body: "Lebih dari 500 ekor tukik penyu hijau berhasil dilepas ke laut.",
+    year: "2010",
+    title: "Transformasi Menjadi Yayasan Raksa Bintana",
+    body: "KPBL (Konservasi Penyu Batu Hiu Lestari) bertransformasi menjadi Yayasan Raksa Bintana dengan fokus konservasi tiga spesies penyu: Lekang, Sisik, dan Hijau.",
   },
   {
-    year: "2025",
-    title: "Program Penanaman Pandan",
-    body: "Merestorasi habitat pesisir dengan penanaman pandan laut di zona sarang.",
+    year: "2006-2010",
+    title: "Penghargaan Konservasi",
+    body: "Yayasan aktif meraih berbagai penghargaan atas dedikasi dalam upaya konservasi penyu dan pelestarian ekosistem pesisir.",
   },
   {
-    year: "2025",
-    title: "4.200+ Tukik Dilepas",
-    body: "Pencapaian kumulatif pelepasan tukik bersama relawan dan wisatawan.",
+    year: "2010-Sekarang",
+    title: "Mandiri Tanpa Bantuan Pemerintah",
+    body: "Yayasan berdiri dan beroperasi secara mandiri tanpa bantuan dari pemerintah pusat maupun daerah, mengandalkan donasi dan dukungan masyarakat.",
   },
 ];
 
@@ -216,24 +217,30 @@ export default function TentangKamiPage() {
 
           <div className="text-editorial flex flex-col gap-5 text-base leading-relaxed text-text-secondary md:text-lg">
             <p>
-              Yayasan Raksa Bintana didirikan pada tahun 2024 dengan komitmen
-              penuh terhadap kelestarian ekosistem laut Indonesia. Berawal dari
-              keprihatinan mendalam atas berkurangnya populasi penyu di daerah
-              pesisir, kami bertransformasi menjadi lembaga konservasi yang
-              mengintegrasikan perlindungan fauna dengan pemberdayaan
-              masyarakat lokal.
+              Yayasan Raksa Bintana didirikan pada tahun 2010 sebagai transformasi 
+              dari KPBL (Konservasi Penyu Batu Hiu Lestari). Perjalanan konservasi 
+              penyu di Pantai Batu Hiu sebenarnya telah dimulai sejak tahun 1983 
+              di pesisir pantai. Setelah tsunami 2006, bangunan konservasi dipindahkan 
+              ke lokasi yang lebih aman di area Raksa Bintana seperti yang ada saat ini.
             </p>
             <p>
-              Kami bekerja di garis pertemuan antara pasir dan ombak: memantau
-              sarang, melindungi induk betina yang mendarat, dan memastikan
-              tukik yang menetas kembali ke laut dalam kondisi terbaik.
-              Sekaligus, kami menjaga pandan laut dan vegetasi pantai sebagai
-              benteng alami terhadap erosi.
+              Kami fokus pada konservasi tiga spesies penyu: Lekang, Sisik, dan Hijau. 
+              Namun, pendaratan penyu di lokasi ini semakin berkurang dari tahun ke tahun 
+              akibat degradasi lingkungan yang disebabkan oleh alih fungsi lahan di 
+              kawasan pesisir. Tantangan ini membuat upaya konservasi kami semakin krusial.
+            </p>
+            <p>
+              Yayasan Raksa Bintana berdiri dan beroperasi secara mandiri tanpa bantuan 
+              dari pemerintah pusat maupun daerah. Oleh karena itu, setiap donasi dan 
+              dukungan dari masyarakat sangat berarti bagi keberlangsungan program 
+              konservasi kami. Selama periode 2006-2010, yayasan aktif meraih berbagai 
+              penghargaan atas dedikasi dalam upaya pelestarian penyu dan ekosistem pesisir.
             </p>
             <p>
               Bagi kami, konservasi bukan pekerjaan segelintir ahli. Ia adalah
               kerja kolektif — warga, pelajar, wisatawan, dan relawan yang
-              bersedia meluangkan pagi-pagi mereka di tepi Pantai Batu Hiu.
+              bersedia meluangkan waktu mereka di tepi Pantai Batu Hiu untuk
+              menjaga warisan alam yang berharga ini.
             </p>
           </div>
         </div>

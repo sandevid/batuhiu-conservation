@@ -16,7 +16,7 @@ const STATUS_COLORS: Record<string, string> = {
 
 export function TurtleSpeciesCards() {
   return (
-    <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {TURTLE_SPECIES.map((species) => (
         <TurtleCard key={species.id} species={species} />
       ))}

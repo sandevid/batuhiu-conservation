@@ -26,6 +26,7 @@ type GalleryItem = {
 
 // Gallery items with real images
 const ITEMS: GalleryItem[] = [
+  // === EDUKASI ===
   {
     id: "g1",
     category: "edukasi",
@@ -51,6 +52,48 @@ const ITEMS: GalleryItem[] = [
     image: "/assets/images/galeri/edukasi-penyu3.webp",
   },
   {
+    id: "g12",
+    category: "edukasi",
+    caption: "Workshop konservasi penyu untuk generasi muda",
+    alt: "Workshop konservasi penyu untuk generasi muda di Pantai Batu Hiu",
+    accent: "from-ocean-light via-coral to-earth",
+    image: "/assets/images/galeri/edukasi-penyu4.webp",
+  },
+  {
+    id: "g13",
+    category: "edukasi",
+    caption: "Pengenalan habitat penyu kepada pengunjung",
+    alt: "Pengenalan habitat penyu kepada pengunjung di Batu Hiu",
+    accent: "from-seafoam via-ocean-mid to-sand-dark",
+    image: "/assets/images/galeri/edukasi-penyu5.webp",
+  },
+  {
+    id: "g14",
+    category: "edukasi",
+    caption: "Kelas lapangan tentang ekosistem pesisir",
+    alt: "Kelas lapangan tentang ekosistem pesisir di Pantai Batu Hiu",
+    accent: "from-coral via-seafoam to-ocean-deep",
+    image: "/assets/images/galeri/edukasi-penyu6.webp",
+  },
+  {
+    id: "g15",
+    category: "edukasi",
+    caption: "Interaksi edukatif dengan penyu",
+    alt: "Interaksi edukatif dengan penyu di pusat konservasi Batu Hiu",
+    accent: "from-earth via-ocean-light to-seafoam",
+    image: "/assets/images/galeri/edukasi-penyu7.webp",
+  },
+  {
+    id: "g10",
+    category: "edukasi",
+    caption: "Studi lapangan konservasi penyu",
+    alt: "Studi lapangan konservasi penyu di Pantai Batu Hiu",
+    accent: "from-ocean-mid via-seafoam to-coral",
+    image: "/assets/images/galeri/studi.webp",
+  },
+
+  // === PELEPASAN TUKIK ===
+  {
     id: "g4",
     category: "tukik",
     caption: "Pelepasan tukik penyu hijau di pagi hari",
@@ -67,6 +110,14 @@ const ITEMS: GalleryItem[] = [
     image: "/assets/images/galeri/pelepasan-penyu3.webp",
   },
   {
+    id: "g16",
+    category: "tukik",
+    caption: "Momen pelepasan tukik bersama keluarga",
+    alt: "Momen pelepasan tukik bersama keluarga di Pantai Batu Hiu",
+    accent: "from-coral via-ocean-mid to-seafoam",
+    image: "/assets/images/galeri/pelepasan-penyu4.webp",
+  },
+  {
     id: "g6",
     category: "tukik",
     caption: "Momen pelepasan tukik bersama relawan",
@@ -74,6 +125,64 @@ const ITEMS: GalleryItem[] = [
     accent: "from-coral via-seafoam to-ocean-deep",
     image: "/assets/images/galeri/pelepasan-tukik2.webp",
   },
+  {
+    id: "g11",
+    category: "tukik",
+    caption: "Program adopsi penyu",
+    alt: "Program adopsi penyu di Pantai Batu Hiu",
+    accent: "from-coral via-ocean-light to-seafoam",
+    image: "/assets/images/galeri/adop-penyu.webp",
+  },
+  {
+    id: "g17",
+    category: "tukik",
+    caption: "Sertifikat adopsi penyu untuk donatur",
+    alt: "Sertifikat adopsi penyu untuk donatur di Batu Hiu Conservation",
+    accent: "from-ocean-deep via-coral to-sand",
+    image: "/assets/images/galeri/adop-penyu2.webp",
+  },
+  {
+    id: "g20",
+    category: "tukik",
+    caption: "Tukik penyu siap dilepas ke laut",
+    alt: "Tukik penyu yang siap dilepas ke laut di Pantai Batu Hiu",
+    accent: "from-seafoam via-sand to-ocean-light",
+    image: "/assets/images/galeri/tukik.webp",
+  },
+  {
+    id: "g18",
+    category: "tukik",
+    caption: "Cara memegang penyu dengan benar",
+    alt: "Panduan cara memegang penyu dengan benar dan aman",
+    accent: "from-ocean-light via-seafoam to-coral",
+    image: "/assets/images/galeri/pegang-penyu.webp",
+  },
+  {
+    id: "g19",
+    category: "tukik",
+    caption: "Interaksi aman dengan penyu",
+    alt: "Interaksi aman dengan penyu di pusat konservasi Batu Hiu",
+    accent: "from-coral via-sand to-ocean-mid",
+    image: "/assets/images/galeri/pegang-penyu2.webp",
+  },
+  {
+    id: "g21",
+    category: "tukik",
+    caption: "Penemuan penyu di pesisir pantai",
+    alt: "Penemuan penyu di pesisir Pantai Batu Hiu untuk konservasi",
+    accent: "from-ocean-deep via-seafoam to-earth",
+    image: "/assets/images/galeri/penemuan-penyu.webp",
+  },
+  {
+    id: "g22",
+    category: "tukik",
+    caption: "Penyu dewasa di habitat alami",
+    alt: "Penyu dewasa di habitat alami Pantai Batu Hiu",
+    accent: "from-ocean-mid via-ocean-light to-seafoam",
+    image: "/assets/images/galeri/penyu.webp",
+  },
+
+  // === PENANAMAN PANDAN ===
   {
     id: "g7",
     category: "pandan",
@@ -99,20 +208,20 @@ const ITEMS: GalleryItem[] = [
     image: "/assets/images/galeri/penanaman-pandan3.webp",
   },
   {
-    id: "g10",
-    category: "edukasi",
-    caption: "Studi lapangan konservasi penyu",
-    alt: "Studi lapangan konservasi penyu di Pantai Batu Hiu",
-    accent: "from-ocean-mid via-seafoam to-coral",
-    image: "/assets/images/galeri/studi.webp",
+    id: "g23",
+    category: "pandan",
+    caption: "Relawan menanam bibit pandan laut",
+    alt: "Relawan menanam bibit pandan laut di Pantai Batu Hiu",
+    accent: "from-seafoam via-earth to-sand-dark",
+    image: "/assets/images/galeri/penanaman-pandan4.webp",
   },
   {
-    id: "g11",
-    category: "tukik",
-    caption: "Program adopsi penyu",
-    alt: "Program adopsi penyu di Pantai Batu Hiu",
-    accent: "from-coral via-ocean-light to-seafoam",
-    image: "/assets/images/galeri/adop-penyu.webp",
+    id: "g24",
+    category: "pandan",
+    caption: "Restorasi habitat pesisir dengan pandan",
+    alt: "Restorasi habitat pesisir dengan penanaman pandan di Batu Hiu",
+    accent: "from-ocean-light via-sand to-earth",
+    image: "/assets/images/galeri/penanaman-pandan5.webp",
   },
 ];
 

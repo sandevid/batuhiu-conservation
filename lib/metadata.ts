@@ -21,26 +21,36 @@ export function buildMetadata({
   ogImage = "/og/og-default.jpg",
 }: BuildMetadataOptions): Metadata {
   const url = new URL(path, SITE.url).toString();
+  const fullOgImageUrl = new URL(ogImage, SITE.url).toString();
 
   return {
     title,
     description,
     keywords,
-    alternates: { canonical: url },
+    alternates: { 
+      canonical: url,
+    },
     openGraph: {
-      title,
+      title: `${title} — ${SITE.foundation}`,
       description,
       url,
-      siteName: SITE.name,
+      siteName: SITE.foundation,
       locale: SITE.locale,
       type: "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      images: [
+        { 
+          url: fullOgImageUrl, 
+          width: 1200, 
+          height: 630, 
+          alt: title 
+        }
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${title} — ${SITE.foundation}`,
       description,
-      images: [ogImage],
+      images: [fullOgImageUrl],
     },
   };
 }
